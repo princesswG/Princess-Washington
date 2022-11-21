@@ -1,17 +1,19 @@
 import React from "react";
-import "./App.css"
 
-import Navbar from "./components/Navbar.js"
+import{
+  Link,
+}
+from "react-router-dom";
 
-export default function Navbar(){
+export function Navbar(){
     return(
         <>
-        <Navbar />
+
         <div id="navbar">
-      <nav class="bg-white shadow">
-        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-          <div class="relative flex h-16 justify-between">
-            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+      <nav className="bg-white shadow">
+        <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div className="relative flex h-16 justify-between">
+            <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
               {/* <!-- Mobile menu button --> */}
               <button type="button" class="
                     inline-flex
@@ -33,7 +35,7 @@ export default function Navbar(){
 
                 Menu open: "hidden", Menu closed: "block"
               --> */}
-                <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                <svg className="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                   stroke-width="1.5" stroke="currentColor" aria-hidden="true">
                   <path stroke-linecap="round" stroke-linejoin="round"
                     d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
@@ -44,7 +46,7 @@ export default function Navbar(){
     
                 Menu open: "block", Menu closed: "hidden"
               --> */}
-                <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                <svg className="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                   stroke-width="1.5" stroke="currentColor" aria-hidden="true">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                 </svg>
@@ -56,13 +58,13 @@ export default function Navbar(){
                   justify-center
                   sm:items-stretch sm:justify-start
                 ">
-              <div class="flex flex-shrink-0 items-center">
-                <h4 class="block h-6 w-auto lg:hidden">Carlos S. Nah</h4>
-                <h4 class="hidden h-6 w-auto lg:block">Carlos S. Nah</h4>
+              <div className="flex flex-shrink-0 items-center">
+                <Link to={"/"} className="block h-6 w-auto lg:hidden">Princess B Washington</Link>
+                <Link to={"/"} className="block h-6 w-auto lg:hidden">Princess B Washington</Link>
               </div>
-              <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+              <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
                 {/* <!-- Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" --> */}
-                <a href="#" class="
+                <Link to={"/projects"} class="
                       inline-flex
                       items-center
                       border-b-2 border-indigo-500
@@ -71,8 +73,8 @@ export default function Navbar(){
                       text-sm
                       font-medium
                       text-gray-900
-                    ">Projects</a>
-                <a href="#" class="
+                    ">Projects</Link>
+                <Link to={"/blog"} class="
                       inline-flex
                       items-center
                       border-b-2 border-transparent
@@ -82,8 +84,8 @@ export default function Navbar(){
                       font-medium
                       text-gray-500
                       hover:border-gray-300 hover:text-gray-700
-                    ">Blog</a>
-                <a href="#" class="
+                    ">Blog</Link>
+                <Link to={"/contacts"} class="
                       inline-flex
                       items-center
                       border-b-2 border-transparent
@@ -93,7 +95,7 @@ export default function Navbar(){
                       font-medium
                       text-gray-500
                       hover:border-gray-300 hover:text-gray-700
-                    ">Contact</a>
+                    ">Contacts</Link>
               </div>
             </div>
             <div class="
@@ -112,7 +114,7 @@ export default function Navbar(){
         <div class="sm:hidden" id="mobile-menu">
           <div class="space-y-1 pt-2 pb-4">
             {/* <!-- Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" --> */}
-            <a href="#" class="
+            <Link to={"/projects"} class="
                   block
                   border-l-4 border-indigo-500
                   bg-indigo-50
@@ -122,8 +124,8 @@ export default function Navbar(){
                   text-base
                   font-medium
                   text-indigo-700
-                ">Projects</a>
-            <a href="#" class="
+                ">Projects</Link>
+            <Link to={"/blog"} class="
                   block
                   border-l-4 border-transparent
                   py-2
@@ -133,8 +135,8 @@ export default function Navbar(){
                   font-medium
                   text-gray-500
                   hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700
-                ">Blog</a>
-            <a href="#" class="
+                ">Blog</Link>
+            <Link to={"/contacts"} class="
                   block
                   border-l-4 border-transparent
                   py-2
@@ -144,52 +146,11 @@ export default function Navbar(){
                   font-medium
                   text-gray-500
                   hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700
-                ">Contact</a>
+                ">Contacts</Link>
           </div>
         </div>
       </nav>
-
-      <div class="py-6">
-        <main>
-          <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-            {/* <!-- Replace with your content -->
-
-           
-
-            {/* <!-- Work --> */}
-            <div id="work" class="bg-[#B2B2B2] h-auto my-6 py-8 rounded-lg border-4">
-              <div class="flex justify-center">
-                <h3 class="border-4 w-20  border-dashed px-4 py-4">Work</h3>
-              </div>
-
-              <details class="px-6 py-4">
-                <summary class="font-bold text-2xl text-gray-800">Kwagei Group</summary>
-                <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international
-                  pavilions, award-winning fireworks and seasonal special events.</p>
-              </details>
-
-              <details class="px-6 py-4">
-                <summary class="font-bold text-2xl text-gray-800">EasyTech</summary>
-                <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international
-                  pavilions, award-winning fireworks and seasonal special events.</p>
-              </details>
-
-              <details class="px-6 py-4">
-                <summary class="font-bold text-2xl text-gray-800">Epcot Center</summary>
-                <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international
-                  pavilions, award-winning fireworks and seasonal special events.</p>
-              </details>
-
-            </div>
-            {/* <!-- Education --> */}
-            <div id="education" class="bg-[#
-            3EAEAEA] h-50 my-6 py-8 rounded-lg border-4"></div>
-            {/* <!-- Hobbies --> */}
-            <div id="hobbie" class="bg-[#B2B2B2] h-50 my-6 py-8 rounded-lg border-4"></div>
-          </div> </main>
-          {/* <!-- /End replace --> */}
-      </div>
     </div>
         </>
-    )
+    );
 }
