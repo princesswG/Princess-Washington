@@ -60,7 +60,7 @@ export function Navbar(){
                 ">
               <div className="flex flex-shrink-0 items-center">
                 <Link to={"/"} className="block h-6 w-auto lg:hidden">Princess B Washington</Link>
-                <Link to={"/"} className="block h-6 w-auto lg:hidden">Princess B Washington</Link>
+                <Link to={"/"} className="hidden h-6 w-auto lg:block">Princess B Washington</Link>
               </div>
               <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
                 {/* <!-- Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" --> */}
