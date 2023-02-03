@@ -5,7 +5,7 @@ export default function Contacts(){
     return(
         <>
         <Navbar/>
-        <div>We are waiting</div>
+        <div><p>Coming soon...</p></div>
         </>
     )
 }

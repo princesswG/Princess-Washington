@@ -28,8 +28,8 @@ export default function Blog(){
   </div>
   <div class="relative mx-auto max-w-7xl">
     <div class="text-center">
-      <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">From the blog</h2>
-      <p class="mx-auto mt-3 max-w-2xl text-xl text-gray-500 sm:mt-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa libero labore natus atque, ducimus sed.</p>
+      <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">WELCOME TO MY BLOG SITE!!!</h2>
+      <p class="mx-auto mt-3 max-w-2xl text-xl text-gray-500 sm:mt-4">This is my personal blog site where I frequently post stories, news and and motivations...</p>
     </div>
     <div class="mx-auto mt-12 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3">
       {
@@ -50,20 +50,20 @@ export default function Blog(){
               <a href="#" class="hover:underline">Article</a>
             </p>
             <a href="#" class="mt-2 block">
-              <p class="text-xl font-semibold text-gray-900">Boost your conversion rate</p>
-              <p class="mt-3 text-base text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium praesentium eius, ut atque fuga culpa, similique sequi cum eos quis dolorum.</p>
+              <p class="text-xl font-semibold text-gray-900">Start doing something great today Not Tomorrow!!</p>
+              <p class="mt-3 text-base text-gray-500"><i>Dream big and explore with everything that's within you, no one will dream for you unless you start doing it yourself...</i></p>
             </a>
           </div>
           <div class="mt-6 flex items-center">
             <div class="flex-shrink-0">
               <a href="#">
-                <span class="sr-only">Roel Aufderehar</span>
-                <img class="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""/>
+                <span class="sr-only">Princess B. Washington</span>
+                <img class="h-10 w-10 rounded-full" src="profile.jpg" alt=""/>
               </a>
             </div>
             <div class="ml-3">
               <p class="text-sm font-medium text-gray-900">
-                <a href="#" class="hover:underline">Roel Aufderehar</a>
+                <a href="https://www.instagram.com/princess_b._washington/" class="hover:underline">Princess B. Washington</a>
               </p>
               <div class="flex space-x-1 text-sm text-gray-500">
                 <time datetime="2020-03-16">Mar 16, 2020</time>

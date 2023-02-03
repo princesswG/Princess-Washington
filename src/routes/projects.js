@@ -17,9 +17,9 @@ export default function Projects() {
         </div>
         <div className="bg-gray-100 px-8 py-4 font-mono font-medium">
                 <h3 className="py-2 md:py-4 font-bold text-2xl">
-                    Dummy Project
+                    My First Project
                     </h3>
-                <p className="text-md text-gray-800 font-mono" > is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.{""}</p>
+                <p className="text-md text-gray-800 font-mono" > This is my first project and is comming very soon... THANKS!!!{""}</p>
                         </div>
         </div>
         <div className="rounded-lg">
@@ -31,9 +31,9 @@ export default function Projects() {
         </div>
         <div className="bg-gray-100 px-8 py-4 font-mono font-medium">
                 <h3 className="py-2 md:py-4 font-bold text-2xl">
-                    Dummy Project
+                    My Second Project
                     </h3>
-                <p className="text-md text-gray-800 font-mono" > is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.{""}</p>
+                <p className="text-md text-gray-800 font-mono" > This is my second project and is comming very soon. THANKS!!!{""}</p>
                         </div>
         </div>
         <div className="rounded-lg">
@@ -45,9 +45,9 @@ export default function Projects() {
         </div>
         <div className="bg-gray-100 px-8 py-4 font-mono font-medium">
                 <h3 className="py-2 md:py-4 font-bold text-2xl">
-                    Dummy Project
+                    My Third Project
                     </h3>
-                <p className="text-md text-gray-800 font-mono" > is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.{""}</p>
+                <p className="text-md text-gray-800 font-mono" >This is my Third Project and is comming very soon.. THANKS!!!{""}</p>
                         </div>
         </div>
         </div>
