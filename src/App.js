@@ -1,38 +1,30 @@
 import React from "react";
 import './App.css';
-import { useState } from "react";
+import { Routes, Route } from "react-router-dom";
 
-import {Navbar} from "./components/Navbar.js";
-import {AuthorCard} from "./components/AuthorCard.js";
-import{WorkCard} from "./components/WorkCard.js";
-import{EducationCard} from "./components/EducationCard.js";
-import{HobbiesCard} from "./components/HobbiesCard.js";
+import { Navbar } from "./components/Navbar.js";
+import { Footer } from "./components/Footer.js";
 
-
-
+// Import page components
+import Home from "./pages/Home.js";
+import About from "./pages/About.js";
+import Contact from "./pages/Contact.js";
+import Projects from "./routes/projects.js";
 
 function App() {
-  const[isActive, setIsActive] = useState({
-    active: true,
-    name: 'education'
-   });
   return (
-<>
-<Navbar/>
-<div className="py-6">
-<main>
-<div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-
-  <AuthorCard {...{isActive, setIsActive}}/>
-  {
-    isActive.name === "work" ?
-    <WorkCard /> : isActive.name ==="education" ?   <EducationCard/> : 
-    <HobbiesCard/>
-  }
-  </div>
-</main>
-</div>
-</>
+    <div className="flex flex-col min-h-screen">
+      <Navbar />
+      <main className="flex-grow">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </main>
+      <Footer />
+    </div>
   );
 }
 
